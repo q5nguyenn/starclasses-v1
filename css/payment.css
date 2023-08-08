@@ -1,0 +1,359 @@
+.pay-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.pay-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.course-profile-item {
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  position: relative;
+}
+
+.course-profile-item:hover {
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+.course-profile-img {
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.course-profile-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-profile-wrapper {
+  width: 100%;
+  display: flex;
+  padding-left: 10px;
+}
+
+.course-profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+.course-profile-name {
+  font-weight: bold;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.course-profile-teacher {
+  display: flex;
+  align-items: flex-end;
+}
+
+.course-profile-teacher-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  overflow: hidden;
+  opacity: 0.8;
+  margin-right: 5px;
+  flex-shrink: 0;
+}
+
+.course-profile-teacher-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-profile-price {
+  margin-left: auto;
+  padding-left: 10px;
+}
+
+.course-profile-delele {
+  margin-left: 10px;
+}
+
+.course-profile-delele i {
+  display: inline-block;
+  background-color: var(--red-color);
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.course-profile-delele i:hover {
+  transition: 0.3s;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+.course-profile-price div:first-child {
+  font-weight: bold;
+}
+
+.course-profile-price div:last-child {
+  text-decoration: line-through;
+  font-size: 14px;
+}
+
+.pay-item {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  cursor: pointer;
+  flex-wrap: wrap;
+}
+
+.pay-item:hover {
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+.pay-item-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.pay-item-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pay-item-title {
+  margin-left: 10px;
+}
+
+.pay-item-body {
+  display: flex;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.pay-item-column {
+  width: 50%;
+  text-align: center;
+}
+
+.pay-item-qr {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.pay-item-qr img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pay-item-bank-name {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.pay-item-bank-logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.pay-item-bank-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pay-item-bank {
+  overflow: hidden;
+  height: 0;
+  cursor: unset;
+  transition: 0.3s;
+  padding: 0 10px;
+  border-bottom: none;
+}
+
+.show-pay-item-bank {
+  height: 400px;
+  transition: 0.3s;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.pay-payment {
+  /* border: none; */
+  cursor: unset;
+}
+
+.pay-payment:hover {
+  box-shadow: unset;
+}
+
+.pay-total-price-old {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.pay-total-price-sale {
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.pay-wrapper button {
+  font-size: 16px;
+  border: none;
+  background-image: var(--gradient-color);
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.pay-wrapper button:hover {
+  transition: 0.3s;
+  opacity: 1;
+}
+
+.course-in-cart .course-profile-item:last-child {
+  border: none;
+}
+
+.popup-pay-success {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #fc5c7c4d, #6a82fb4d);
+  backdrop-filter: blur(4px);
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: 1003;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: none;
+  animation: fade-in 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+}
+
+.popup-pay-wrapper {
+  width: 500px;
+  background-color: #fff;
+  padding: 20px 0;
+  position: relative;
+  animation: scale-in-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.popup-admin-desc {
+  margin-top: 20px;
+}
+
+.popup-pay-img {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.popup-pay-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.popup-pay-wrapper::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-color);
+  animation: width-to-full 3s linear forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+} */
+
+.popup-pay-content {
+  margin: 20px;
+}
+
+#print-bill {
+  background-image: unset;
+  opacity: 1;
+  background-color: var(--gray-color);
+  color: unset;
+  margin-right: 10px;
+}
+
+#print-bill i {
+  margin-right: 5px;
+}
+
+#print-bill:hover {
+  transition: 0.3s;
+  background-color: var(--gray-color-hover);
+}
+
+.print {
+  display: none;
+}
+
+/* Responsive ----------*/
+
+@media only screen and (max-width: 1023px) {
+  /* Payment */
+}
+
+@media only screen and (max-width: 767px) {
+  /* Payment */
+  .pay-item-body {
+    flex-direction: column;
+  }
+
+  .pay-item-column {
+    width: 100%;
+  }
+
+  .show-pay-item-bank {
+    height: 650px;
+  }
+
+  .popup-pay-wrapper {
+    width: 90%;
+  }
+}

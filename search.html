@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Classes - Search</title>
+    <link rel="icon" type="image/x-icon" href="./images/x-icon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/boxchat.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav - bar - start -->
+      <div class="navs">
+        <div class="nav-desktop">
+          <a href="./index.html" class="logo logo-animation">
+            <div class="logo-inner">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <span class="logo-title logo-title-nav">Star Classes</span>
+          </a>
+          <!-- <div class="nav-item">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+          </div> -->
+          <div class="nav-item nav-menu">
+            <span>Categories</span><i class="bi bi-chevron-up"></i>
+            <div class="tabs">
+              <div class="tab-items"></div>
+              <div class="tab-item-inner"></div>
+            </div>
+          </div>
+          <form class="nav-item nav-search" id="nav-search" autocomplete="off">
+            <label for=""><i class="bi bi-search"></i></label>
+            <input
+              type="text"
+              id="search-item"
+              placeholder="Search for anything"
+            />
+            <span class="focus-input"></span>
+          </form>
+          <div class="nav-item nav-link nav-voucher">
+            <a href="#" id="active-voucher-top">Activate Code</a>
+          </div>
+          <div class="nav-item nav-link nav-cart">
+            <a href="#" id="cart-top"><i class="bi bi-bag-fill"></i></a>
+            <span id="cart-course"></span>
+          </div>
+          <!-- <div class="nav-item">
+            <input type="checkbox" id="switch" class="switch-input" />
+            <label for="switch" class="switch"></label>
+          </div> -->
+          <div class="count-online">
+            <i class="bi bi-person"></i>
+            <span class="count-online-value"> 1000</span>
+            <span class="count-online-text">&nbsp;online</span>
+          </div>
+          <div class="nav-sign">
+            <div class="nav-item button">
+              <a href="./signin.html">Log in</a>
+            </div>
+            <div class="nav-item button active">
+              <a href="./signup.html">Sign up</a>
+            </div>
+          </div>
+          <div class="nav-user">
+            <div class="nav-user-img" href="./profile.html">
+              <img src="./images/user.png" alt="" />
+            </div>
+            <div class="nav-user-dropdown">
+              <a class="nav-user-dropdown-top" href="./profile.html">
+                <div class="nav-user-top-img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="nav-user-top-info">
+                  <div class="nav-user-top-name"></div>
+                  <div class="nav-user-top-email"></div>
+                </div>
+              </a>
+              <div class="nav-user-dropdown-item">
+                <a href="./profile.html?frame=1">My learning</a>
+                <a href="./profile.html?frame=4">My cart</a>
+                <a href="./profile.html?frame=2">Active Code</a>
+                <a href="./profile.html?frame=5">Wishlist</a>
+              </div>
+              <div class="nav-user-dropdown-item">
+                <a href="./profile.html">Notifications</a>
+              </div>
+              <div class="nav-user-dropdown-item">
+                <a href="./profile.html">Edit profile</a>
+              </div>
+              <div class="nav-user-dropdown-item">
+                <a href="./about-us.html">Help</a>
+                <a href="#" id="signout">Log out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-mobile">
+          <div class="nav-mobile-button"><i class="bi bi-list"></i></div>
+          <a href="./index.html" class="logo logo-animation">
+            <div class="logo-inner">
+              <img src="./images/logo.png" alt="" />
+            </div>
+          </a>
+          <div class="nav-mobile-right">
+            <div id="search-mobile">
+              <i class="bi bi-search-heart-fill"></i>
+            </div>
+            <div class="nav-cart-mobile">
+              <a href="#" id="cart-top-mobile"
+                ><i class="bi bi-bag-fill"></i>
+              </a>
+              <span id="cart-course-mobile"></span>
+            </div>
+            <div class="nav-mobile-account">
+              <i class="bi bi-person-fill"></i>
+              <div class="nav-user-dropdown-mobile">
+                <div class="user-login">
+                  <a class="nav-user-dropdown-top" href="./profile.html">
+                    <div class="nav-user-top-info">
+                      <div class="nav-user-top-name-mobile"></div>
+                      <div class="nav-user-top-email-mobile"></div>
+                    </div>
+                  </a>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./profile.html?frame=1">My learning</a>
+                    <a href="./profile.html?frame=4">My cart</a>
+                    <a href="./profile.html?frame=2">Active code</a>
+                    <a href="./profile.html?frame=5">Wishlist</a>
+                  </div>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./profile.html">Notifications</a>
+                  </div>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./profile.html">Edit profile</a>
+                  </div>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./about-us.html">Help</a>
+                    <a href="#" id="signout-mobile">Log out</a>
+                  </div>
+                </div>
+                <div class="user-logout">
+                  <div class="nav-user-dropdown-item">
+                    <a href="./signin.html">Log in</a>
+                    <a href="./signup.html">Sign up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu - mobile - start-->
+      <div class="nav-mobile-fixed-full">
+        <div class="nav-mobile-fixed">
+          <div class="nav-mobile-row-top">
+            <a href="./index.html" class="nav-mobile-item">
+              <i class="bi bi-house-fill"></i> Home page</a
+            >
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <div class="nav-moblie-row-mid"></div>
+          <div class="nav-moblie-row">
+            <a href="./about-us.html" class="nav-mobile-item"
+              ><i class="bi bi-headset"></i> Help</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile-search-full">
+        <form
+          class="nav-item nav-search"
+          id="nav-search-mobile"
+          autocomplete="off"
+        >
+          <label for=""><i class="bi bi-search"></i></label>
+          <input
+            type="text"
+            id="search-item-mobile"
+            placeholder="Search for anything"
+          />
+          <i class="bi bi-x-lg close-search-mobile"></i>
+        </form>
+      </div>
+      <!-- menu - mobile - end-->
+      <!-- nav - bar - end -->
+      <!-- main - start -->
+      <main>
+        <div class="search-wrapper">
+          <div class="search-filter">
+            <div class="search-filter-title">
+              <i class="bi bi-sliders"></i> <span>Filter</span
+              ><button class="button-fa">Clear Filter</button>
+            </div>
+            <!-- item 1 -->
+            <div class="search-item">
+              <div class="search-item-title">
+                <span>Sort by</span> <i class="bi bi-chevron-up"></i>
+              </div>
+              <div class="search-item-wrapper search-item-show">
+                <div class="search-item-inner">
+                  <input type="radio" name="sort" id="sort1" />
+                  <label for="sort1" class="radio"></label>
+                  <label for="sort1">
+                    <span>Most students</span>
+                  </label>
+                </div>
+                <div class="search-item-inner">
+                  <input type="radio" name="sort" id="sort2" />
+                  <label for="sort2" class="radio"></label>
+                  <label for="sort2">
+                    <span>Most stars</span>
+                  </label>
+                </div>
+                <div class="search-item-inner">
+                  <input type="radio" name="sort" id="sort3" />
+                  <label for="sort3" class="radio"></label>
+                  <label for="sort3">
+                    <span>Newest</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- item 2 -->
+            <div class="search-item">
+              <div class="search-item-title">
+                <span>Price</span> <i class="bi bi-chevron-up"></i>
+              </div>
+              <div class="search-item-wrapper search-item-show">
+                <div class="search-item-inner">
+                  <input type="radio" name="sort" id="price1" />
+                  <label for="price1" class="radio"></label>
+                  <label for="price1">
+                    <span>From high to low</span>
+                  </label>
+                </div>
+                <div class="search-item-inner">
+                  <input type="radio" name="sort" id="price2" />
+                  <label for="price2" class="radio"></label>
+                  <label for="price2">
+                    <span>From low to high</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div class="search-item">
+              <div class="search-item-title">
+                <span>Ratings</span> <i class="bi bi-chevron-up"></i>
+              </div>
+              <div class="search-item-wrapper search-item-show">
+                <div class="search-item-inner">
+                  <input type="radio" name="star" id="star1" value="4.5" />
+                  <label for="star1" class="radio"></label>
+                  <label for="star1">
+                    <span class="course-star">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-half"></i>
+                    </span>
+                    <span>4.5 & up</span>
+                  </label>
+                </div>
+                <div class="search-item-inner">
+                  <input type="radio" name="star" id="star2" value="4" />
+                  <label for="star2" class="radio"></label>
+                  <label for="star2">
+                    <span class="course-star">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </span>
+                    <span>4.0 & up</span>
+                  </label>
+                </div>
+                <div class="search-item-inner">
+                  <input type="radio" name="star" id="star3" value="3.5" />
+                  <label for="star3" class="radio"></label>
+                  <label for="star3">
+                    <span class="course-star">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-half"></i><i class="bi bi-star"></i>
+                    </span>
+                    <span>3.5 & up</span>
+                  </label>
+                </div>
+                <div class="search-item-inner">
+                  <input type="radio" name="star" id="star4" value="3" />
+                  <label for="star4" class="radio"></label>
+                  <label for="star4">
+                    <span class="course-star">
+                      <i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i
+                      ><i class="bi bi-star-fill"></i><i class="bi bi-star"></i
+                      ><i class="bi bi-star"></i>
+                    </span>
+                    <span>3.0 & up</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-result">
+            <div class="search-result-top">
+              <div class="search-result-title">
+                Search results for: " <span id="search-value"></span>"
+              </div>
+              <div class="search-result-title-replace">Featured Course</div>
+              <div class="search-count">
+                <span class="search-count-value"></span> results
+                <span class="search-count-replace"> found</span>
+              </div>
+            </div>
+            <!-- Kết quả tìm kiếm -->
+            <div class="search-result-display"></div>
+            <!--  -->
+            <div class="search-view-more">
+              <button class="button-fa" id="view-more">Show more</button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- main - end -->
+      <!-- Search box hiển thị kết quả tìm kiếm -->
+      <div class="search-result-popup">
+        <a class="search-result-item-popup" href="#"></a>
+      </div>
+      <!-- Chat with employee -->
+      <div class="chat-icon">
+        <i class="bi bi-chat-fill"></i>
+      </div>
+      <div class="box-chat box-hide">
+        <div class="box-chat-top">
+          <a href="./index.html" class="logo logo-animation">
+            <div class="logo-inner">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <span class="logo-title">Star Classes</span>
+          </a>
+          <span class="box-minimize"><i class="bi bi-dash-lg"></i></span>
+        </div>
+        <div class="box-chat-content">
+          <div class="box-chat-content-intro">
+            <div class="box-chat-title">Chat with Star Classes</div>
+            <div class="box-chat-desc">Welcome to Star Classes</div>
+            <div>We're here to support you!</div>
+          </div>
+        </div>
+        <!-- <div class="box-chat-content"></div> -->
+        <form class="guest-input">
+          <div class="guest-input-item">
+            <input type="text" />
+            <span class="focus-input"></span>
+          </div>
+          <button class="button-guest-chat" type="submit">Send</button>
+        </form>
+        <div class="box-chat-button">Start Chat</div>
+      </div>
+      <!-- Popup NewStudent -->
+      <a href="#" class="new-student"> </a>
+
+      <!-- footer - start -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-social">
+            <a href="./index.html" class="logo logo-animation">
+              <div class="logo-inner">
+                <img src="./images/logo.png" alt="" />
+              </div>
+              <span class="logo-title">Star Classes</span>
+            </a>
+            <div class="social-links">
+              <a href="https://www.youtube.com/starclasses" class="social-link"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="https://www.facebook.com/" class="social-link"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://twitter.com/" class="social-link"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="https://github.com/" class="social-link"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a href="https://discord.com/" class="social-link"
+                ><i class="bi bi-discord"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-column-title">Link:</div>
+            <div class="footer-column-item">
+              <a href="https://www.facebook.com/">
+                <i class="bi bi-facebook"></i>
+                <span>Star Classes Community on Facebook</span>
+              </a>
+            </div>
+            <div class="footer-column-item">
+              <a href="./about-us.html">
+                <i class="bi bi-building"></i>
+                <span>Star Classes Joint Stock Company</span>
+              </a>
+            </div>
+            <div class="footer-column-item">
+              <a href="./terms.html">
+                <i class="bi bi-list-stars"></i>
+                <span>Our terms and conditions</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-column-title">Contact:</div>
+            <div class="footer-column-item">
+              <div>
+                <i class="bi bi-cursor-fill"></i>
+                <span>Address: No. 8 Ton That Thuyet, My Dinh, Hanoi</span>
+              </div>
+            </div>
+            <div class="footer-column-item">
+              <a href="mailto: q5nguyenn@gmail.com">
+                <i class="bi bi-envelope"></i>
+                <span>Email: starclasses@edu.vn</span>
+              </a>
+            </div>
+            <div class="footer-column-item">
+              <a href="tel: 0986295956">
+                <i class="bi bi-telephone-fill"></i>
+                <span>Tel: +84986295956</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-subtle">
+          <span>© 2022 copyright, Anh-Hung-Dung-Quy-Quy®</span>
+          <div class="footer-subtitle-links">
+            <a href="./terms.html" class="footer-subtitle-link">Privacy</a>
+            |
+            <a href="./terms.html" class="footer-subtitle-link"
+              >Terms Of Services</a
+            >
+          </div>
+        </div>
+      </footer>
+      <!-- footer - end -->
+      <!-- Loading -->
+      <div class="loading">
+        <a href="./index.html" class="logo logo-animation">
+          <div class="logo-inner">
+            <img src="./images/logo.png" alt="" />
+          </div>
+          <div class="logo-title">Star Classes</div>
+        </a>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/user.js"></script>
+    <script src="./js/boxchat.js"></script>
+    <script type="module" src="./js/global.js"></script>
+    <script type="module" src="./js/search.js"></script>
+  </body>
+</html>

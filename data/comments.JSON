@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "id-user": "11",
+    "name": "Thuy Trang",
+    "avatar": "./images/user_01.jpg",
+    "star": "4",
+    "comment": "The course is so wonderful and useful that children can learn each movement, the teacher teaches very clearly and in detail",
+    "time": "3 days ago"
+  },
+  {
+    "id": "2",
+    "id-user": "12",
+    "name": "Chau Dang Khoa",
+    "avatar": "./images/user_02.jpg",
+    "star": "4",
+    "comment": "Very good, thank you very much, wish the center continued development and success",
+    "time": "4 days ago"
+  },
+  {
+    "id": "3",
+    "id-user": "13",
+    "name": "Nguyen Thanh Tung",
+    "avatar": "./images/user_03.jpg",
+    "star": "4",
+    "comment": "Useful course, many practical exercises, can be applied to many different fields",
+    "time": "2 weeks ago"
+  },
+  {
+    "id": "4",
+    "id-user": "14",
+    "name": "Pham Lan Huong",
+    "avatar": "./images/user_04.jpg",
+    "star": "5",
+    "comment": "The course was really great, helped me apply it in my work",
+    "time": "3 weeks ago"
+  },
+  {
+    "id": "5",
+    "id-user": "15",
+    "name": "Lan Ngoc",
+    "avatar": "./images/user_05.jpg",
+    "star": "4",
+    "comment": "The lecturer teaches quite carefully, understands the structure of the functions",
+    "time": "3 weeks ago"
+  },
+  {
+    "id": "6",
+    "id-user": "16",
+    "name": "Pham Trang",
+    "avatar": "./images/user_06.jpg",
+    "star": "4",
+    "comment": "It's a bit frustrating at first, but the more you learn, the more interesting you should try to finish about 1/3 of the course and you will start to feel good.",
+    "time": "3 weeks ago"
+  },
+  {
+    "id": "7",
+    "id-user": "17",
+    "name": "Ngoc Duc",
+    "avatar": "./images/user_07.jpg",
+    "star": "4",
+    "comment": "Very detailed, useful to use",
+    "time": "1 month ago"
+  },
+  {
+    "id": "8",
+    "id-user": "18",
+    "name": "Quynh Anh",
+    "avatar": "./images/user_08.jpg",
+    "star": "5",
+    "comment": "The course brings a lot of useful knowledge",
+    "time": "2 months ago"
+  },
+  {
+    "id": "9",
+    "id-user": "19",
+    "name": "Tran Thanh",
+    "avatar": "./images/user_09.jpg",
+    "star": "4",
+    "comment": "The teacher teaches in detail. It's easy to understand",
+    "time": "2 months ago"
+  },
+  {
+    "id": "10",
+    "id-user": "20",
+    "name": "Viet Huong",
+    "avatar": "./images/user_10.jpg",
+    "star": "5",
+    "comment": "I am looking for an Excel course to improve my work efficiency, after researching I chose the course of Star Classes. The course is designed to be convenient for learning, the content of the lectures and exercises are very good, I can take advantage of my free time to learn a new skill, especially during the Covid epidemic. After finishing the Excel course, I will learn more courses on Star Classes.",
+    "time": "1 year ago"
+  }
+]

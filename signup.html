@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Classes - Signup</title>
+    <link rel="icon" type="image/x-icon" href="./images/x-icon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/boxchat.css" />
+    <link rel="stylesheet" href="./css/course.css" />
+    <link rel="stylesheet" href="./css/sign.css" />
+  </head>
+  <body>
+    <div class="container-sign"></div>
+    <div class="container-wrapper">
+      <div class="sign-icon"><img src="./images/sign-icon.png" alt="" /></div>
+      <div class="sign-pic">
+        <img src="./images/singpic.jpg" alt="" />
+        <div class="byword">
+          <div class="byword-title">
+            "The universe is full of magical things patiently waiting for our
+            wits to grow sharper."
+          </div>
+          <div class="byword-author">- Eden Phillpotts</div>
+        </div>
+      </div>
+      <form class="sign-box" novalidate>
+        <div class="sign-title">Sign up</div>
+        <div class="input-item">
+          <i class="bi bi-person"></i>
+          <input
+            type="text"
+            class="input"
+            placeholder="Username"
+            id="username"
+          />
+          <span class="focus-input"></span>
+        </div>
+        <div class="input-item-error">&nbsp;</div>
+        <div class="input-item">
+          <i class="bi bi-envelope"></i>
+          <input type="Email" class="input" placeholder="Email" id="email" />
+          <span class="focus-input"></span>
+        </div>
+        <div class="input-item-error">&nbsp;</div>
+        <div class="input-item">
+          <i class="bi bi-telephone"></i>
+          <input
+            type="number"
+            class="input"
+            placeholder="Phone number"
+            id="phone"
+          />
+          <span class="focus-input"></span>
+        </div>
+        <div class="input-item-error">&nbsp;</div>
+        <div class="input-item">
+          <i class="bi bi-key"></i>
+          <input
+            type="password"
+            class="input"
+            placeholder="Password"
+            id="password"
+          />
+          <span class="focus-input"></span>
+          <div class="show-password">
+            <i class="bi bi-eye-slash"></i>
+          </div>
+        </div>
+        <div class="input-item-error">&nbsp;</div>
+        <div class="term">
+          <input type="checkbox" id="term" value="yes" /><label
+            for="term"
+            class="checkbox"
+          ></label>
+          <span class="term-text">
+            <label for="term">I agree to our </label>
+            <a href="./terms.html" class="term-link">terms and conditions</a>
+          </span>
+        </div>
+        <div class="input-item-error">&nbsp;</div>
+        <button class="button-fa button-signup" type="submit">Sign up</button>
+        <div class="sign-more">
+          Already have an account?
+          <a href="./signin.html" class="sign-more-link"> Log in</a>
+        </div>
+      </form>
+    </div>
+    <!-- Fake Loading -->
+    <div class="loading">
+      <a href="./index.html" class="logo logo-animation">
+        <div class="logo-inner">
+          <img src="./images/logo.png" alt="" />
+        </div>
+        <div class="logo-title">Star Classes</div>
+      </a>
+      <div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <script type="module" src="./js/user.js"></script>
+    <script type="module" src="./js/signup.js"></script>
+  </body>
+</html>

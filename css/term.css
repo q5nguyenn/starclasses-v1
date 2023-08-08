@@ -1,0 +1,28 @@
+.term-wrapper {
+  width: 90%;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 20px 10px;
+  background-color: #fff;
+}
+.term-wrapper div {
+  font-weight: bold;
+}
+
+.term-title-all {
+  font-size: 30px;
+}
+
+.term-title {
+  font-size: 28px;
+}
+
+.term-wrapper div,
+p {
+  line-height: 2;
+}
+
+.term-wrapper ul li::after {
+  top: 10px;
+  transform: translateY(0);
+}

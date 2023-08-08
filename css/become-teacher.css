@@ -1,0 +1,156 @@
+.be-teacher-top {
+  background-image: linear-gradient(
+      316deg,
+      rgba(75, 161, 252, 0.5) 3%,
+      rgba(237, 42, 237, 0.5) 100%
+    ),
+    url(../images/cover.jpg);
+  width: 100%;
+  /* height: 0px; */
+  background-position: center;
+  padding: 20px;
+  color: #fff;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.be-teacher-wrapper {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+  /* color: #fff; */
+}
+.video-container {
+  width: 100%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.be-teacher-wrapper-top {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.button-b-teacher {
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: unset;
+  background-image: linear-gradient(transparent, transparent);
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.button-b-teacher:hover {
+  transition: 0.3s;
+  background-color: #fff;
+  color: var(--primary-color);
+}
+
+.center {
+  text-align: center;
+}
+
+.button-wrapper {
+  text-align: center;
+}
+
+.be-teacher-wrapper-title {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+.be-teacher-item {
+  flex: 0 0 calc(25% - 30px);
+  margin: 30px 0 0 30px;
+}
+
+.be-teacher-item-box {
+  width: calc(100% + 30px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: -30px 0 0 -30px;
+  justify-content: center;
+}
+
+.be-teacher-item-content {
+  text-align: center;
+}
+
+.be-teacher-item-image {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.be-teacher-item-image img {
+  width: 100%;
+}
+
+.be-teacher-item-title {
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.be-teacher-wrapper-hotline {
+  font-weight: bold;
+  font-size: 24px;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.be-teacher-wrapper-top-for {
+  font-size: 19px;
+  margin: 20px 0;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* object-fit: fill; */
+}
+/* Responsive ----------*/
+@media only screen and (max-width: 1023px) {
+  /* Become Teacher */
+  .be-teacher-item-box {
+    width: calc(100% + 10px);
+    margin: -10px 0 0 -10px;
+  }
+
+  .be-teacher-item {
+    flex: 0 0 calc(25% - 10px);
+    margin: 10px 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* Become Teacher */
+  .be-teacher-item {
+    flex: 0 0 calc(50% - 10px);
+  }
+}

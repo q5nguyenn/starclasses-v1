@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Classes - Course</title>
+    <link rel="icon" type="image/x-icon" href="./images/x-icon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/boxchat.css" />
+    <!-- <link rel="stylesheet" href="./css/search.css" /> -->
+    <link rel="stylesheet" href="./css/coursedesc.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav - bar - start -->
+      <div class="navs">
+        <div class="nav-desktop">
+          <a href="./index.html" class="logo logo-animation">
+            <div class="logo-inner">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <span class="logo-title logo-title-nav">Star Classes</span>
+          </a>
+          <!-- <div class="nav-item">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+          </div> -->
+          <div class="nav-item nav-menu">
+            <span>Categories</span><i class="bi bi-chevron-up"></i>
+            <div class="tabs">
+              <div class="tab-items"></div>
+              <div class="tab-item-inner"></div>
+            </div>
+          </div>
+          <form class="nav-item nav-search" id="nav-search" autocomplete="off">
+            <label for=""><i class="bi bi-search"></i></label>
+            <input
+              type="text"
+              id="search-item"
+              placeholder="Search for anything"
+            />
+            <span class="focus-input"></span>
+          </form>
+          <div class="nav-item nav-link nav-voucher">
+            <a href="#" id="active-voucher-top">Activate Code</a>
+          </div>
+          <div class="nav-item nav-link nav-cart">
+            <a href="#" id="cart-top"><i class="bi bi-bag-fill"></i></a>
+            <span id="cart-course"></span>
+          </div>
+          <!-- <div class="nav-item">
+            <input type="checkbox" id="switch" class="switch-input" />
+            <label for="switch" class="switch"></label>
+          </div> -->
+          <div class="count-online">
+            <i class="bi bi-person"></i>
+            <span class="count-online-value"> 1000</span>
+            <span class="count-online-text">&nbsp;online</span>
+          </div>
+          <div class="nav-sign">
+            <div class="nav-item button">
+              <a href="./signin.html">Log in</a>
+            </div>
+            <div class="nav-item button active">
+              <a href="./signup.html">Sign up</a>
+            </div>
+          </div>
+          <div class="nav-user">
+            <div class="nav-user-img" href="./profile.html">
+              <img src="./images/user.png" alt="" />
+            </div>
+            <div class="nav-user-dropdown">
+              <a class="nav-user-dropdown-top" href="./profile.html">
+                <div class="nav-user-top-img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="nav-user-top-info">
+                  <div class="nav-user-top-name"></div>
+                  <div class="nav-user-top-email"></div>
+                </div>
+              </a>
+              <div class="nav-user-dropdown-item">
+                <a href="./profile.html?frame=1">My learning</a>
+                <a href="./profile.html?frame=4">My cart</a>
+                <a href="./profile.html?frame=2">Active Code</a>
+                <a href="./profile.html?frame=5">Wishlist</a>
+              </div>
+              <div class="nav-user-dropdown-item">
+                <a href="./profile.html">Notifications</a>
+              </div>
+              <div class="nav-user-dropdown-item">
+                <a href="./profile.html">Edit profile</a>
+              </div>
+              <div class="nav-user-dropdown-item">
+                <a href="./about-us.html">Help</a>
+                <a href="#" id="signout">Log out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-mobile">
+          <div class="nav-mobile-button"><i class="bi bi-list"></i></div>
+          <a href="./index.html" class="logo logo-animation">
+            <div class="logo-inner">
+              <img src="./images/logo.png" alt="" />
+            </div>
+          </a>
+          <div class="nav-mobile-right">
+            <div id="search-mobile">
+              <i class="bi bi-search-heart-fill"></i>
+            </div>
+            <div class="nav-cart-mobile">
+              <a href="#" id="cart-top-mobile"
+                ><i class="bi bi-bag-fill"></i>
+              </a>
+              <span id="cart-course-mobile"></span>
+            </div>
+            <div class="nav-mobile-account">
+              <i class="bi bi-person-fill"></i>
+              <div class="nav-user-dropdown-mobile">
+                <div class="user-login">
+                  <a class="nav-user-dropdown-top" href="./profile.html">
+                    <div class="nav-user-top-info">
+                      <div class="nav-user-top-name-mobile"></div>
+                      <div class="nav-user-top-email-mobile"></div>
+                    </div>
+                  </a>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./profile.html?frame=1">My learning</a>
+                    <a href="./profile.html?frame=4">My cart</a>
+                    <a href="./profile.html?frame=2">Active code</a>
+                    <a href="./profile.html?frame=5">Wishlist</a>
+                  </div>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./profile.html">Notifications</a>
+                  </div>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./profile.html">Edit profile</a>
+                  </div>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./about-us.html">Help</a>
+                    <a href="#" id="signout-mobile">Log out</a>
+                  </div>
+                </div>
+                <div class="user-logout">
+                  <div class="nav-user-dropdown-item">
+                    <a href="./signin.html">Log in</a>
+                    <a href="./signup.html">Sign up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu - mobile - start-->
+      <div class="nav-mobile-fixed-full">
+        <div class="nav-mobile-fixed">
+          <div class="nav-mobile-row-top">
+            <a href="./index.html" class="nav-mobile-item">
+              <i class="bi bi-house-fill"></i> Home page</a
+            >
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <div class="nav-moblie-row-mid"></div>
+          <div class="nav-moblie-row">
+            <a href="./about-us.html" class="nav-mobile-item"
+              ><i class="bi bi-headset"></i> Help</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile-search-full">
+        <form
+          class="nav-item nav-search"
+          id="nav-search-mobile"
+          autocomplete="off"
+        >
+          <label for=""><i class="bi bi-search"></i></label>
+          <input
+            type="text"
+            id="search-item-mobile"
+            placeholder="Search for anything"
+          />
+          <i class="bi bi-x-lg close-search-mobile"></i>
+        </form>
+      </div>
+      <!-- menu - mobile - end-->
+      <!-- nav - bar - end -->
+      <!-- main - start -->
+      <main class="course-desc-boss">
+        <div class="course-top">
+          <div class="course-wrapper">
+            <div class="course-tree">
+              <span>Star Classes</span
+              ><i class="bi bi-chevron-double-right"></i>
+              <a id="section" href="#"></a>
+              <i class="bi bi-chevron-double-right"></i>
+              <a id="subject" href="#"></a>
+            </div>
+            <h2 class="course-name"></h2>
+            <div class="course-desc"></div>
+            <div class="course-info">
+              <div class="coure-info-teacher">
+                <div class="course-teacher-avatar">
+                  <img src="#" alt="" />
+                </div>
+                <a class="course-teacher-name" href="./teacher.html"></a>
+              </div>
+              <div class="course-rate">
+                <span class="course-star" id="course-star-display">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i
+                  ><i class="bi bi-star-half"></i>
+                </span>
+                <span id="rate"></span>
+              </div>
+              <div class="course-students-count">
+                <i class="bi bi-people-fill"></i>
+                <span id="student"></span>
+              </div>
+              <div class="course-print">
+                <i class="bi bi-printer-fill"></i>
+                <span>Print course</span>
+              </div>
+              <div class="course-heart">
+                <i class="bi bi-heart-fill"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="course-body">
+          <div class="course-cover">
+            <div class="video-container">
+              <iframe
+                width="956"
+                height="538"
+                src="https://www.youtube.com/embed/jfKfPfyJRdk"
+                title="lofi hip hop radio - beats to relax/study to"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+          <div class="course-intro">
+            <div class="course-intro-title">What you will learn</div>
+            <div class="course-intro-wrapper">
+              <div class="course-intro-item">
+                <i class="bi bi-check-lg"></i>
+                <span class="course-intro-content"
+                  >Know how to use your brain effectively and rationally</span
+                >
+              </div>
+              <div class="course-intro-item">
+                <i class="bi bi-check-lg"></i>
+                <span class="course-intro-content"
+                  >Confidence in yourself when communicating and selling</span
+                >
+              </div>
+              <div class="course-intro-item">
+                <i class="bi bi-check-lg"></i>
+                <span class="course-intro-content"
+                  >Make a strong impression on colleagues and partners</span
+                >
+              </div>
+              <div class="course-intro-item">
+                <i class="bi bi-check-lg"></i>
+                <span class="course-intro-content"
+                  >Memory ability is improved quickly in a short time</span
+                >
+              </div>
+              <div class="course-intro-item">
+                <i class="bi bi-check-lg"></i>
+                <span class="course-intro-content"
+                  >Possessing amazing secrets about the brain, you will find
+                  life extremely interesting and stimulating</span
+                >
+              </div>
+              <div class="course-intro-item">
+                <i class="bi bi-check-lg"></i>
+                <span class="course-intro-content"
+                  >Very helpful for you in studying and taking exams</span
+                >
+              </div>
+              <div class="course-intro-item">
+                <i class="bi bi-check-lg"></i>
+                <span class="course-intro-content"
+                  >Increase sales and save significant time</span
+                >
+              </div>
+              <div class="course-intro-item">
+                <i class="bi bi-check-lg"></i>
+                <span class="course-intro-content"
+                  >Practice more proficiently your brain is sharper and
+                  sharper</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="course-content">
+            <div class="course-content-title">Course content</div>
+            <div class="course-content-info">
+              <span class="course-number-section">19 parts</span
+              ><i class="bi bi-dot"></i
+              ><span class="course-time">Total time 4 hours 16 minutes</span>
+            </div>
+            <div class="course-content-list">
+              <div class="course-content-item">
+                <div class="course-content-item-title">
+                  <i class="bi bi-chevron-up"></i>
+                  <span>Part 1: Introduction to the course</span>
+                </div>
+                <div class="course-content-wrapper course-content-show">
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name"
+                      >Lesson 1: Introduction, things to prepare</span
+                    >
+                    <span class="count-content-video">Preview</span>
+                    <span class="count-content-time">06:31</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name"
+                      >Lesson 2: Exercises to train memory</span
+                    >
+                    <span class="count-content-video">Preview</span>
+                    <span class="count-content-time">07:28</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name"
+                      >Lesson 3: Memorization techniques</span
+                    >
+                    <span class="count-content-video">Preview</span>
+                    <span class="count-content-time">05:17</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name"
+                      >Lesson 4: Memory anchoring method - image encoding</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">08:55</span>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="course-content-item">
+                <div class="course-content-item-title">
+                  <i class="bi bi-chevron-up"></i>
+                  <span>Part 2: Applying reflection to life</span>
+                </div>
+                <div class="course-content-wrapper course-content-show">
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name">
+                      Lesson 5: Remember good books you've read</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">04:33</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name"
+                      >Lesson 6: Remember all the tasks that you have to do in a
+                      day</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">06:18</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name">
+                      Lesson 7: Remember the journey you've been through</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">09:21</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name">
+                      Lesson 8: Remember the name and characteristics of the
+                      Customer or anyone</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">07:05</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name">
+                      Lesson 9: Remember phone number, date of birth, position,
+                      hobby... customers</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">08:16</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name">
+                      Lesson 10: Remembering things in the house - things you
+                      often forget (keys, wallets, ...)</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">05:45</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name">
+                      Lesson 11: Memorize for Presentation without looking at
+                      the paper</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">07:44</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name">
+                      Lesson 12: Memorize the date</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">08:32</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name">
+                      Lesson 13: Practice memorization</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">09:56</span>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+              <div class="course-content-item">
+                <div class="course-content-item-title">
+                  <i class="bi bi-chevron-up"></i>
+                  <span>Part 3: Application to learning</span>
+                </div>
+                <div class="course-content-wrapper course-content-show">
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name">
+                      Lesson 14: Memorize the subjects Socio Literature -
+                      Geography - History</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">08:18</span>
+                  </div>
+                  <div class="course-content-inner">
+                    <i class="bi bi-file-earmark"></i>
+                    <span class="count-content-name">
+                      Lesson 15: Memorize Nature Mathematics, Physics,
+                      Chemistry</span
+                    >
+                    <span class="count-content-video"></span>
+                    <span class="count-content-time">10:05</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="course-content-info course-content-info-print">
+            <div class="course-content-info-titlle">Course introduction</div>
+            <div class="course-content-info-item">
+              <div class="course-content-info-item-title">Do you know?</div>
+              <div class="course-content-info-item-desc">
+                According to high-level studies on brain activity, experts say
+                that our brain only works at a true capacity of 10% of the total
+                brain, the remaining 90% falls into a "resting" state. waiting
+                for us to use it. Although there is a lot of controversy
+                surrounding this research, if it is true, it means that we are
+                wasting the limitless power of our brains that we possess!
+              </div>
+              <div class="course-content-info-item-desc">
+                <b>But don't worry! </b> <br />
+                As long as you have a method to exploit and promote the power of
+                the brain scientifically and effectively, owning a brain that
+                can remember everything is extremely easy! And this is the
+                course FOR YOU.
+              </div>
+            </div>
+            <div class="course-content-info-item view-more">
+              <div class="course-content-info-item-title">
+                What is the course that you cannot miss?
+              </div>
+              <ul>
+                <li>
+                  Methods to stimulate and maximize brain power to get a super
+                  brain
+                </li>
+                <li>
+                  Exercises for effective memory training can be applied
+                  immediately to life and work
+                </li>
+                <li>
+                  Methods to remember information quickly - standard - only: how
+                  to memorize a book, remember tasks, to-do lists, memorize
+                  information about birth dates, hobbies, phone numbers, sea
+                  signs car number, memorize vocabulary...
+                </li>
+                <li>
+                  Smart and effective application to both life, study and work.
+                </li>
+                <li>
+                  Help you quickly own a perfect brain using both left
+                  hemispheres - right brain in more than the above tasks!
+                </li>
+              </ul>
+              <p style="margin-top: 20px">
+                So what are you waiting for, quickly join the this course to
+                bring into full play the unconscious power of your intellect
+                today to make life easier, happier and more successful. labour!
+              </p>
+            </div>
+            <div class="course-content-info-showmore">
+              <i class="bi bi-chevron-down"></i>
+              <span>Show more</span>
+            </div>
+          </div>
+          <div class="course-relevant">
+            <div class="course-content-info-titlle" style="margin-left: 10px">
+              Related Courses
+            </div>
+            <div class="course-relevant-box"></div>
+            <div class="search-view-more">
+              <button class="button-fa" id="view-more">Show more</button>
+            </div>
+          </div>
+
+          <div class="course-teacher">
+            <a class="course-teacher-title" href="#"></a>
+            <div class="course-teacher-job"></div>
+            <div class="course-teacher-info">
+              <div class="course-teacher-img">
+                <img src="#" alt="" />
+              </div>
+              <div class="course-teacher-info-class">
+                <div class="course-teacher-info-item">
+                  <i class="bi bi-star-fill"></i>
+                  <span class="star-rate"></span>
+                </div>
+                <div class="course-teacher-info-item">
+                  <i class="bi bi-award-fill"></i>
+                  <span class="view-rate"></span>
+                </div>
+                <div class="course-teacher-info-item">
+                  <i class="bi bi-people-fill"></i>
+                  <span class="number-student"></span>
+                </div>
+                <div class="course-teacher-info-item">
+                  <i class="bi bi-play-circle-fill"></i>
+                  <span class="number-course"></span>
+                </div>
+              </div>
+            </div>
+            <div class="course-teach-text-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              temporibus, quod quaerat odio sunt repellendus consectetur. Animi
+              vero sequi laudantium reiciendis eius, cum odit sit nulla earum
+              magni dolorem soluta! Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Autem unde neque quam nihil ut explicabo libero
+              incidunt? Enim eveniet sit aperiam porro quisquam possimus
+              nesciunt laborum dolore, unde, reiciendis deserunt.
+            </div>
+          </div>
+          <div class="course-comment">
+            <div class="course-comment-title">
+              <span class="course-star">
+                <i class="bi bi-star-fill"></i>
+              </span>
+              <span>Course Reviews</span>
+            </div>
+            <div class="course-comment-wrapper"></div>
+            <button class="button-fa" id="get-more-comment">Show more</button>
+          </div>
+          <div class="course-comment course-comment-user">
+            <div class="send-rate">
+              <div class="send-rate-top">
+                <span>Enter your review</span
+                ><span class="course-star" id="course-star-rate">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star"></i
+                  ><i class="bi bi-star"></i><i class="bi bi-star"></i
+                  ><i class="bi bi-star"></i>
+                </span>
+              </div>
+              <textarea name="" id="user-commnent" rows="3"></textarea>
+              <span class="user-comment-error">
+                *You have not entered text, at least 10 characters up to 200
+                characters
+              </span>
+              <button class="button-fa" id="send-user-comment">
+                Submit your review
+              </button>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- main - end -->
+      <!-- Course Popup -->
+      <div class="course-popup-container">
+        <div class="course-popup-top">
+          <div class="course-popup-price">
+            <div>
+              <span class="course-popup-nowprice">$ 69,99</span>
+              <span class="course-popup-oldprice">$ 59,99</span>
+            </div>
+            <span class="course-popup-percent-price">(-22% OFF)</span>
+          </div>
+          <div class="course-popup-main-button">
+            <button class="button-fa button-gradient" id="add-course">
+              Add to cart
+            </button>
+            <button class="button-fa" id="buy-now">Buy now</button>
+          </div>
+          <div class="course-popup-remoney">30-Day Money-Back Guarantee</div>
+          <div class="course-popup-include">
+            <div class="course-popup-include-title">This course includes:</div>
+            <div class="course-popup-item">
+              <i class="bi bi-play-btn"></i>
+              <span class="course-time">13 hours on-demand video</span>
+            </div>
+            <div class="course-popup-item">
+              <i class="bi bi-file-earmark"></i>
+              <span class="course-number-section">20 sections</span>
+            </div>
+            <div class="course-popup-item">
+              <i class="bi bi-file-arrow-down"></i>
+              <span>21 downloadable resources</span>
+            </div>
+            <div class="course-popup-item">
+              <i class="bi bi-infinity"></i>
+              <span>Full lifetime access</span>
+            </div>
+            <div class="course-popup-item">
+              <i class="bi bi-phone"></i>
+              <span>Access on mobile and TV</span>
+            </div>
+            <div class="course-popup-item">
+              <i class="bi bi-trophy"></i>
+              <span>Certificate of completion</span>
+            </div>
+          </div>
+          <div class="course-popup-link">
+            <div class="course-popup-link-item" id="fb-share-button">
+              <i class="bi bi-share"></i>
+              <div>Share</div>
+            </div>
+            <div class="course-popup-link-item course-gift">
+              <i class="bi bi-person-hearts"></i>
+              <div>Gift this course</div>
+            </div>
+            <div class="course-popup-link-item" id="voucher">
+              <i class="bi bi-ticket-perforated"></i>
+              <div>Apply Coupon</div>
+            </div>
+          </div>
+        </div>
+        <div class="course-popup-more">
+          <div class="course-popup-more-title">Training 5 or more people?</div>
+          <div>
+            Get your team access to 17,000+ top Udemy courses anytime, anywhere.
+          </div>
+          <a class="button-fa button-alone" href="./become-teacher.html"
+            >Try StarClasses Business</a
+          >
+        </div>
+      </div>
+      <!-- Course Popup Success -->
+      <div class="popup-add-cart-sucess">
+        <i class="bi bi-check-lg"></i>
+        <span>Add to cart successfully</span>
+        <button class="button-fa button-gradient">
+          View cart and checkout
+        </button>
+      </div>
+      <!-- Video Popup -->
+      <div class="video">
+        <div class="video-container">
+          <iframe
+            width="956"
+            height="538"
+            src="https://www.youtube.com/embed/jfKfPfyJRdk"
+            title="lofi hip hop radio - beats to relax/study to"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <div class="video-blur"></div>
+      <!-- Search box hiển thị kết quả tìm kiếm -->
+      <div class="search-result-popup">
+        <a class="search-result-item-popup" href="#"></a>
+      </div>
+      <!-- Chat with employee -->
+      <div class="chat-icon">
+        <i class="bi bi-chat-fill"></i>
+      </div>
+      <div class="box-chat box-hide">
+        <div class="box-chat-top">
+          <a href="./index.html" class="logo logo-animation">
+            <div class="logo-inner">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <span class="logo-title">Star Classes</span>
+          </a>
+          <span class="box-minimize"><i class="bi bi-dash-lg"></i></span>
+        </div>
+        <div class="box-chat-content">
+          <div class="box-chat-content-intro">
+            <div class="box-chat-title">Chat with Star Classes</div>
+            <div class="box-chat-desc">Welcome to Star Classes</div>
+            <div>We're here to support you!</div>
+          </div>
+        </div>
+        <!-- <div class="box-chat-content"></div> -->
+        <form class="guest-input">
+          <div class="guest-input-item">
+            <input type="text" />
+            <span class="focus-input"></span>
+          </div>
+          <button class="button-guest-chat" type="submit">Send</button>
+        </form>
+        <div class="box-chat-button">Start Chat</div>
+      </div>
+      <!-- Popup NewStudent -->
+      <a href="#" class="new-student"> </a>
+      <!-- footer - start -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-social">
+            <a href="./index.html" class="logo logo-animation">
+              <div class="logo-inner">
+                <img src="./images/logo.png" alt="" />
+              </div>
+              <span class="logo-title">Star Classes</span>
+            </a>
+            <div class="social-links">
+              <a href="https://www.youtube.com/starclasses" class="social-link"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="https://www.facebook.com/" class="social-link"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://twitter.com/" class="social-link"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="https://github.com/" class="social-link"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a href="https://discord.com/" class="social-link"
+                ><i class="bi bi-discord"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-column-title">Link:</div>
+            <div class="footer-column-item">
+              <a href="https://www.facebook.com/">
+                <i class="bi bi-facebook"></i>
+                <span>Star Classes Community on Facebook</span>
+              </a>
+            </div>
+            <div class="footer-column-item">
+              <a href="./about-us.html">
+                <i class="bi bi-building"></i>
+                <span>Star Classes Joint Stock Company</span>
+              </a>
+            </div>
+            <div class="footer-column-item">
+              <a href="./terms.html">
+                <i class="bi bi-list-stars"></i>
+                <span>Our terms and conditions</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-column-title">Contact:</div>
+            <div class="footer-column-item">
+              <div>
+                <i class="bi bi-cursor-fill"></i>
+                <span>Address: No. 8 Ton That Thuyet, My Dinh, Hanoi</span>
+              </div>
+            </div>
+            <div class="footer-column-item">
+              <a href="mailto: q5nguyenn@gmail.com">
+                <i class="bi bi-envelope"></i>
+                <span>Email: starclasses@edu.vn</span>
+              </a>
+            </div>
+            <div class="footer-column-item">
+              <a href="tel: 0986295956">
+                <i class="bi bi-telephone-fill"></i>
+                <span>Tel: +84986295956</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-subtle">
+          <span>© 2022 copyright, Anh-Hung-Dung-Quy-Quy®</span>
+          <div class="footer-subtitle-links">
+            <a href="./terms.html" class="footer-subtitle-link">Privacy</a>
+            |
+            <a href="./terms.html" class="footer-subtitle-link"
+              >Terms Of Services</a
+            >
+          </div>
+        </div>
+      </footer>
+      <!-- footer - end -->
+
+      <!-- Loading -->
+      <div class="loading">
+        <a href="./index.html" class="logo logo-animation">
+          <div class="logo-inner">
+            <img src="./images/logo.png" alt="" />
+          </div>
+          <div class="logo-title">Star Classes</div>
+        </a>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/user.js"></script>
+    <script type="module" src="./js/global.js"></script>
+    <script src="./js/boxchat.js"></script>
+    <script type="module" src="./js/coursedesc.js"></script>
+  </body>
+</html>

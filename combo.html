@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Classes - Course Combo</title>
+    <link rel="icon" type="image/x-icon" href="./images/x-icon.ico" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/boxchat.css" />
+    <!-- <link rel="stylesheet" href="./css/teacher.css" /> -->
+    <link rel="stylesheet" href="./css/combo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav - bar - start -->
+      <div class="navs">
+        <div class="nav-desktop">
+          <a href="./index.html" class="logo logo-animation">
+            <div class="logo-inner">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <span class="logo-title logo-title-nav">Star Classes</span>
+          </a>
+          <!-- <div class="nav-item">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+          </div> -->
+          <div class="nav-item nav-menu">
+            <span>Categories</span><i class="bi bi-chevron-up"></i>
+            <div class="tabs">
+              <div class="tab-items"></div>
+              <div class="tab-item-inner"></div>
+            </div>
+          </div>
+          <form class="nav-item nav-search" id="nav-search" autocomplete="off">
+            <label for=""><i class="bi bi-search"></i></label>
+            <input
+              type="text"
+              id="search-item"
+              placeholder="Search for anything"
+            />
+            <span class="focus-input"></span>
+          </form>
+          <div class="nav-item nav-link nav-voucher">
+            <a href="#" id="active-voucher-top">Activate Code</a>
+          </div>
+          <div class="nav-item nav-link nav-cart">
+            <a href="#" id="cart-top"><i class="bi bi-bag-fill"></i></a>
+            <span id="cart-course"></span>
+          </div>
+          <!-- <div class="nav-item">
+            <input type="checkbox" id="switch" class="switch-input" />
+            <label for="switch" class="switch"></label>
+          </div> -->
+          <div class="count-online">
+            <i class="bi bi-person"></i>
+            <span class="count-online-value"> 1000</span>
+            <span class="count-online-text">&nbsp;online</span>
+          </div>
+          <div class="nav-sign">
+            <div class="nav-item button">
+              <a href="./signin.html">Log in</a>
+            </div>
+            <div class="nav-item button active">
+              <a href="./signup.html">Sign up</a>
+            </div>
+          </div>
+          <div class="nav-user">
+            <div class="nav-user-img" href="./profile.html">
+              <img src="./images/user.png" alt="" />
+            </div>
+            <div class="nav-user-dropdown">
+              <a class="nav-user-dropdown-top" href="./profile.html">
+                <div class="nav-user-top-img">
+                  <img src="./images/user.png" alt="" />
+                </div>
+                <div class="nav-user-top-info">
+                  <div class="nav-user-top-name"></div>
+                  <div class="nav-user-top-email"></div>
+                </div>
+              </a>
+              <div class="nav-user-dropdown-item">
+                <a href="./profile.html?frame=1">My learning</a>
+                <a href="./profile.html?frame=4">My cart</a>
+                <a href="./profile.html?frame=2">Active Code</a>
+                <a href="./profile.html?frame=5">Wishlist</a>
+              </div>
+              <div class="nav-user-dropdown-item">
+                <a href="./profile.html">Notifications</a>
+              </div>
+              <div class="nav-user-dropdown-item">
+                <a href="./profile.html">Edit profile</a>
+              </div>
+              <div class="nav-user-dropdown-item">
+                <a href="./about-us.html">Help</a>
+                <a href="#" id="signout">Log out</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-mobile">
+          <div class="nav-mobile-button"><i class="bi bi-list"></i></div>
+          <a href="./index.html" class="logo logo-animation">
+            <div class="logo-inner">
+              <img src="./images/logo.png" alt="" />
+            </div>
+          </a>
+          <div class="nav-mobile-right">
+            <div id="search-mobile">
+              <i class="bi bi-search-heart-fill"></i>
+            </div>
+            <div class="nav-cart-mobile">
+              <a href="#" id="cart-top-mobile"
+                ><i class="bi bi-bag-fill"></i>
+              </a>
+              <span id="cart-course-mobile"></span>
+            </div>
+            <div class="nav-mobile-account">
+              <i class="bi bi-person-fill"></i>
+              <div class="nav-user-dropdown-mobile">
+                <div class="user-login">
+                  <a class="nav-user-dropdown-top" href="./profile.html">
+                    <div class="nav-user-top-info">
+                      <div class="nav-user-top-name-mobile"></div>
+                      <div class="nav-user-top-email-mobile"></div>
+                    </div>
+                  </a>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./profile.html?frame=1">My learning</a>
+                    <a href="./profile.html?frame=4">My cart</a>
+                    <a href="./profile.html?frame=2">Active code</a>
+                    <a href="./profile.html?frame=5">Wishlist</a>
+                  </div>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./profile.html">Notifications</a>
+                  </div>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./profile.html">Edit profile</a>
+                  </div>
+                  <div class="nav-user-dropdown-item">
+                    <a href="./about-us.html">Help</a>
+                    <a href="#" id="signout-mobile">Log out</a>
+                  </div>
+                </div>
+                <div class="user-logout">
+                  <div class="nav-user-dropdown-item">
+                    <a href="./signin.html">Log in</a>
+                    <a href="./signup.html">Sign up</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- menu - mobile - start-->
+      <div class="nav-mobile-fixed-full">
+        <div class="nav-mobile-fixed">
+          <div class="nav-mobile-row-top">
+            <a href="./index.html" class="nav-mobile-item">
+              <i class="bi bi-house-fill"></i> Home page</a
+            >
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <div class="nav-moblie-row-mid"></div>
+          <div class="nav-moblie-row">
+            <a href="./about-us.html" class="nav-mobile-item"
+              ><i class="bi bi-headset"></i> Help</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="nav-mobile-search-full">
+        <form
+          class="nav-item nav-search"
+          id="nav-search-mobile"
+          autocomplete="off"
+        >
+          <label for=""><i class="bi bi-search"></i></label>
+          <input
+            type="text"
+            id="search-item-mobile"
+            placeholder="Search for anything"
+          />
+          <i class="bi bi-x-lg close-search-mobile"></i>
+        </form>
+      </div>
+      <!-- menu - mobile - end-->
+      <!-- nav - bar - end -->
+      <!-- main - start -->
+      <main style="margin-top: 50px">
+        <div class="combo-top">
+          <div class="combo-wrapper flex combo-wrapper-mobile">
+            <div>
+              <div class="combo-wrapper-top" id="combo-name">
+                Full set of 2 English communication courses
+              </div>
+              <div class="combo-wrapper-top-for">For beginners</div>
+              <div class="course-combo">
+                <div class="teacher-wrapper-top">
+                  <div class="teacher-avatar">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="teacher-info">
+                    <div class="teacher-info-top">
+                      <div class="teacher-info-item">
+                        <div class="teacher-info-count" id="combo-course">
+                          2
+                        </div>
+                        <div class="teacher-info-count-name">
+                          <i class="bi bi-book-fill"></i> Courses
+                        </div>
+                      </div>
+                      <div class="teacher-info-item">
+                        <div class="teacher-info-count" id="combo-student">
+                          9999
+                        </div>
+                        <div class="teacher-info-count-name">
+                          <i class="bi bi-people-fill"></i> Students
+                        </div>
+                      </div>
+                      <div class="teacher-info-item">
+                        <div class="teacher-info-count" id="combo-rating">
+                          5.0
+                        </div>
+                        <div class="teacher-info-count-name">
+                          <span class="course-star">
+                            <i class="bi bi-star-fill"></i>
+                          </span>
+                          Average rating
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="teacher-name">
+                  <span></span>
+                  <a class="teacher-social" href="https://vi-vn.facebook.com/">
+                    <i class="bi bi-facebook"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="combo-problem-wrapper">
+              <div class="combo-problem-title">you are having problems?</div>
+              <div class="combo-problem">
+                <div>
+                  <i class="bi bi-check-lg"></i> Lost roots or just starting to
+                  learn English
+                </div>
+                <div>
+                  <i class="bi bi-check-lg"></i> Study first and forget later,
+                  study forever and still not good
+                </div>
+                <div>
+                  <i class="bi bi-check-lg"></i> Inability to communicate,
+                  pronounce, listen, speak, read, write
+                </div>
+                <div>
+                  <i class="bi bi-check-lg"></i>
+                  Older people learn English, need to learn English for work
+                </div>
+                <div>
+                  <i class="bi bi-check-lg"></i>
+                  Busy does not have much time, and money to study at the Center
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="combo-body">
+          <div class="combo-box flex combo-box-mobile">
+            <div class="combo-box-colum" style="padding-right: 20px">
+              <div class="combo-box-colum-title">Introduce</div>
+              <p class="combo-box-colum-desc">
+                As you know, <b>English</b> is the most used language in the
+                world. Because of that, a lot of good learning materials from
+                educational institutions and major universities are written in
+                English. More than half of the websites on the Internet are also
+                written in English, such as newspapers, tools, and global online
+                services. Just knowing this language will give you access to
+                this endless source of information. This is one of the biggest
+                benefits that shows how important it is to learn English.
+              </p>
+            </div>
+            <div class="combo-box-colum">
+              <div class="video-container">
+                <iframe
+                  width="956"
+                  height="538"
+                  src="https://www.youtube.com/embed/jfKfPfyJRdk"
+                  title="lofi hip hop radio - beats to relax/study to"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="combo-box flex">
+            <div class="combo-box-top">
+              <div class="combo-box-top-item">
+                <div class="combo-box-top-title">2</div>
+                <div>Courses</div>
+              </div>
+              <div class="combo-box-top-item">
+                <div class="combo-box-top-title" id="combo-lesson">277</div>
+                <div>Lessons</div>
+              </div>
+              <div class="combo-box-top-item">
+                <div class="combo-box-top-title" id="combo-time">28</div>
+                <div>Hours</div>
+              </div>
+            </div>
+          </div>
+          <div class="combo-box">
+            <div class="combo-box-title">Courses details</div>
+            <div class="combo-box-wrapper flex-justify">
+              <div class="combo-box-colum-3">
+                <div class="combo-box-colum-img">
+                  <img src="./images/listening.png" alt="" />
+                </div>
+                <div class="combo-box-colum-3-title">
+                  Good at comprehensive English: Listening, Speaking, Reading
+                  and Writing
+                </div>
+                <div class="combo-box-colum-desc">
+                  <div>
+                    <span>1.</span
+                    ><span
+                      >Increase 3000 common English vocabulary words in 30
+                      days</span
+                    >
+                  </div>
+                  <div>
+                    <span>2.</span
+                    ><span
+                      >Master the 10 most common English grammars in
+                      communication</span
+                    >
+                  </div>
+                  <div>
+                    <span>3.</span
+                    ><span>Standard pronunciation learning strategies</span>
+                  </div>
+                  <div>
+                    <span>4.</span><span>English Listening Strategies</span>
+                  </div>
+                  <div>
+                    <span>5.</span
+                    ><span
+                      >Strategies for learning English speaking reflexes</span
+                    >
+                  </div>
+                  <div>
+                    <span>6.</span
+                    ><span>English reading comprehension strategies</span>
+                  </div>
+                  <div>
+                    <span>7.</span
+                    ><span>English writing techniques for busy people</span>
+                  </div>
+                </div>
+              </div>
+              <div class="combo-box-colum-3">
+                <div class="combo-box-colum-img">
+                  <img src="./images/conversation.png" alt="" />
+                </div>
+                <div class="combo-box-colum-3-title">
+                  Communicative English for beginners
+                </div>
+                <div class="combo-box-colum-desc">
+                  <div>
+                    <span>1.</span><span>English communication lessons</span>
+                  </div>
+                </div>
+              </div>
+              <div class="combo-box-colum-3">
+                <div class="combo-box-colum-img">
+                  <img src="./images/writing.png" alt="" />
+                </div>
+                <div class="combo-box-colum-3-title">
+                  Practice English reflexes to communicate super effectively
+                </div>
+                <div class="combo-box-colum-desc">
+                  <div>
+                    <span>1.</span
+                    ><span>English communication reflex exercises</span>
+                  </div>
+                  <div><span>2.</span><span>Course summary</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="combo-box">
+            <div class="combo-box-title">Companion teacher</div>
+            <div class="combo-box-wrapper">
+              <div>
+                <ul>
+                  <li>Master's degree in Linguistics, Curtin University.</li>
+                  <li>
+                    Lecturer in English department at Hanoi University of
+                    Education and member of the Executive Committee of Hanoi
+                    English Research and Teaching Association.
+                  </li>
+                  <li>Founder of English English Master Center</li>
+                  <li>
+                    Co-founder of the Sinhvienkhoaanh.net forum for students of
+                    English Faculty, Hanoi National University of Education.
+                  </li>
+                  <li>
+                    Member of Executive Committee of Hanoi Association for
+                    Research and Teaching of English
+                  </li>
+                  <li>
+                    2009, 2010, 2011: Received Lawrence S. Ting Scholarship for
+                    the best students in universities & Scholarship of Ha Noi
+                    City Study Promotion Association
+                  </li>
+                  <li>
+                    2008: 3rd prize in the national competition for excellent
+                    students in English for 12th graders
+                  </li>
+                </ul>
+              </div>
+              <div class="teacher-combo">
+                <div class="teacher-avatar teacher-avatar-2">
+                  <img src="" alt="" />
+                </div>
+                <div class="teacher-name teacher-name-2">Teacher Three</div>
+              </div>
+            </div>
+          </div>
+          <div class="combo-box combo-review">
+            <div class="combo-box-title">Student comments</div>
+            <div class="combo-box-wrapper">
+              <div>
+                <div>
+                  <b>Nguyen Mai An - </b
+                  ><span>Student at Academy of Journalism and Propaganda</span>
+                </div>
+                <p>
+                  My English ability has improved markedly. The enthusiasm of
+                  the teachers makes me easy to absorb. The course also helped
+                  me get used to the way of learning "Learning goes hand in
+                  hand" and now I can communicate in English quite well and more
+                  naturally. Give it a try and this course won't let you down.
+                </p>
+              </div>
+              <div class="student-avatar">
+                <div class="teacher-avatar">
+                  <img src="./images/user-comment-01.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="combo-box-wrapper">
+              <div class="student-avatar">
+                <div class="teacher-avatar">
+                  <img src="./images/user-comment-02.jpg" alt="" />
+                </div>
+              </div>
+              <div>
+                <div><b>Tran Tien Minh - </b><span>Office staff</span></div>
+                <p>
+                  I was exposed to and practiced English from my high school
+                  year to the time I went to work, but during that time, I only
+                  learned well in reading and grammar skills. My knowledge of
+                  business English, specifically listening and speaking skills
+                  at work, is still quite poor and only uses simple sentences in
+                  daily communication. After the course I was more confident in
+                  English. If compared with my previous study time, it is clear
+                  that my results now are much superior. My listening and
+                  speaking skills at work have improved markedly.
+                </p>
+              </div>
+            </div>
+            <div class="combo-box-wrapper">
+              <div>
+                <div><b>Hoang Phuong Hoa - </b><span>Marketer</span></div>
+                <p>
+                  Although it is an online course, I feel that the learning is
+                  extremely effective and useful. I think you don't need to
+                  spend too much money and time to study outside centers is not
+                  effective, not to mention encountering poor quality centers.
+                  Instead, you can self-study online courses at home while
+                  training concentration and exchanging with teachers for a long
+                  time. The teachers in this course, I think teach very well,
+                  have many years of experience, so they have developed tips so
+                  that my English learning is no longer boring.
+                </p>
+              </div>
+              <div class="student-avatar">
+                <div class="teacher-avatar">
+                  <img src="./images/user-comment-03.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="combo-box combo-sale-price">
+            <div class="combo-box-title">
+              BUY THE FULL COURSE NOW TO GET DISCOUNTS
+              <span id="combo-percent">30%</span>
+            </div>
+            <div class="combo-price-box-wrapper">
+              <div class="combo-price-box">
+                <div class="price-old">999$</div>
+                <div class="price-sale">
+                  <div>Only</div>
+                  <div id="price-sale">699$</div>
+                </div>
+              </div>
+            </div>
+            <div class="combo-count-down">
+              <div class="count-down-timmer">
+                <div class="count-down-timmer-title">
+                  Hurry, this offer ends in:
+                </div>
+                <div class="count-down-item">
+                  <div class="count-down-time date-time">11</div>
+                  <div>Days</div>
+                </div>
+                <span>:</span>
+                <div class="count-down-item">
+                  <div class="count-down-time hour-time">11</div>
+                  <div>Hours</div>
+                </div>
+                <span>:</span>
+                <div class="count-down-item">
+                  <div class="count-down-time minute-time">11</div>
+                  <div>Minutes</div>
+                </div>
+                <span>:</span>
+                <div class="count-down-item">
+                  <div class="count-down-time second-time">11</div>
+                  <div>Seconds</div>
+                </div>
+              </div>
+            </div>
+            <div class="buy-now-wrapper">
+              <a class="button-buy-now" href="#">Buy now</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- Count-down-fixed -->
+      <div class="combo-count-down count-down-fixed">
+        <div class="count-down-timmer">
+          <div class="count-down-timmer-title">Hurry, this offer ends in:</div>
+          <div class="count-down-item">
+            <div class="count-down-time date-time">11</div>
+            <div>Days</div>
+          </div>
+          <span>:</span>
+          <div class="count-down-item">
+            <div class="count-down-time hour-time">11</div>
+            <div>Hours</div>
+          </div>
+          <span>:</span>
+          <div class="count-down-item">
+            <div class="count-down-time minute-time">11</div>
+            <div>Minutes</div>
+          </div>
+          <span>:</span>
+          <div class="count-down-item">
+            <div class="count-down-time second-time">11</div>
+            <div>Seconds</div>
+          </div>
+        </div>
+        <div class="buy-now-wrapper buy-now-wrapper-alert">
+          <div id="combo-percent-2">-30%</div>
+          <div>
+            <a class="button-buy-now" href="#">Buy now</a>
+          </div>
+        </div>
+      </div>
+      <!-- main - end -->
+      <!-- Search box hiển thị kết quả tìm kiếm -->
+      <div class="search-result-popup">
+        <a class="search-result-item-popup" href="#"></a>
+      </div>
+      <!-- Chat with employee -->
+      <div class="chat-icon">
+        <i class="bi bi-chat-fill"></i>
+      </div>
+      <div class="box-chat box-hide">
+        <div class="box-chat-top">
+          <a href="./index.html" class="logo logo-animation">
+            <div class="logo-inner">
+              <img src="./images/logo.png" alt="" />
+            </div>
+            <span class="logo-title">Star Classes</span>
+          </a>
+          <span class="box-minimize"><i class="bi bi-dash-lg"></i></span>
+        </div>
+        <div class="box-chat-content">
+          <div class="box-chat-content-intro">
+            <div class="box-chat-title">Chat with Star Classes</div>
+            <div class="box-chat-desc">Welcome to Star Classes</div>
+            <div>We're here to support you!</div>
+          </div>
+        </div>
+        <!-- <div class="box-chat-content"></div> -->
+        <form class="guest-input">
+          <div class="guest-input-item">
+            <input type="text" />
+            <span class="focus-input"></span>
+          </div>
+          <button class="button-guest-chat" type="submit">Send</button>
+        </form>
+        <div class="box-chat-button">Start Chat</div>
+      </div>
+
+      <!-- Popup NewStudent -->
+      <a href="#" class="new-student"> </a>
+
+      <!-- footer - start -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-social">
+            <a href="./index.html" class="logo logo-animation">
+              <div class="logo-inner">
+                <img src="./images/logo.png" alt="" />
+              </div>
+              <span class="logo-title">Star Classes</span>
+            </a>
+            <div class="social-links">
+              <a href="https://www.youtube.com/starclasses" class="social-link"
+                ><i class="bi bi-youtube"></i
+              ></a>
+              <a href="https://www.facebook.com/" class="social-link"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="https://twitter.com/" class="social-link"
+                ><i class="bi bi-twitter"></i
+              ></a>
+              <a href="https://github.com/" class="social-link"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a href="https://discord.com/" class="social-link"
+                ><i class="bi bi-discord"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-column-title">Link:</div>
+            <div class="footer-column-item">
+              <a href="https://www.facebook.com/">
+                <i class="bi bi-facebook"></i>
+                <span>Star Classes Community on Facebook</span>
+              </a>
+            </div>
+            <div class="footer-column-item">
+              <a href="./about-us.html">
+                <i class="bi bi-building"></i>
+                <span>Star Classes Joint Stock Company</span>
+              </a>
+            </div>
+            <div class="footer-column-item">
+              <a href="./terms.html">
+                <i class="bi bi-list-stars"></i>
+                <span>Our terms and conditions</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <div class="footer-column-title">Contact:</div>
+            <div class="footer-column-item">
+              <div>
+                <i class="bi bi-cursor-fill"></i>
+                <span>Address: No. 8 Ton That Thuyet, My Dinh, Hanoi</span>
+              </div>
+            </div>
+            <div class="footer-column-item">
+              <a href="mailto: q5nguyenn@gmail.com">
+                <i class="bi bi-envelope"></i>
+                <span>Email: starclasses@edu.vn</span>
+              </a>
+            </div>
+            <div class="footer-column-item">
+              <a href="tel: 0986295956">
+                <i class="bi bi-telephone-fill"></i>
+                <span>Tel: +84986295956</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-subtle">
+          <span>© 2022 copyright, Anh-Hung-Dung-Quy-Quy®</span>
+          <div class="footer-subtitle-links">
+            <a href="./terms.html" class="footer-subtitle-link">Privacy</a>
+            |
+            <a href="./terms.html" class="footer-subtitle-link"
+              >Terms Of Services</a
+            >
+          </div>
+        </div>
+      </footer>
+      <!-- footer - end -->
+      <!-- Loading -->
+      <div class="loading">
+        <a href="./index.html" class="logo logo-animation">
+          <div class="logo-inner">
+            <img src="./images/logo.png" alt="" />
+          </div>
+          <div class="logo-title">Star Classes</div>
+        </a>
+        <div>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./js/user.js"></script>
+    <script src="./js/boxchat.js"></script>
+    <script type="module" src="./js/global.js"></script>
+    <script type="module" src="./js/combo.js"></script>
+  </body>
+</html>

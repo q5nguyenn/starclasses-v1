@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "name": "Thuy Trang",
+    "class": "English for enthusiasts",
+    "teacher": "Bino",
+    "cover": "./images/user_01.jpg",
+    "course_link": "./course.html?id=1"
+  },
+  {
+    "id": "2",
+    "name": "Chau Dang Khoa",
+    "class": "Learn guitar accompaniment",
+    "teacher": "Hien Rau",
+    "cover": "./images/user_02.jpg",
+    "course_link": "./course.html?id=2"
+  },
+  {
+    "id": "3",
+    "name": "Nguyen Thanh Tung",
+    "class": "Master Excel, Word, Powerpoint",
+    "teacher": "Dinh Hong Linh",
+    "cover": "./images/user_03.jpg",
+    "course_link": "./course.html?id=3"
+  },
+  {
+    "id": "4",
+    "name": "Pham Lan Huong",
+    "class": "AutoCAD campaign",
+    "teacher": "Nguyen Quang Thuan",
+    "cover": "./images/user_04.jpg",
+    "course_link": "./course.html?id=4"
+  },
+  {
+    "id": "5",
+    "name": "Lan Ngoc",
+    "class": "Master Photosop with Huy Quan Hoa",
+    "teacher": "Mai Xuan Huy",
+    "cover": "./images/user_05.jpg",
+    "course_link": "./course.html?id=5"
+  },
+  {
+    "id": "6",
+    "name": "Pham Trang",
+    "class": "Learn HTML, CSS, JavaScript from basic to advanced",
+    "teacher": "Nguyen Duc Viet",
+    "cover": "./images/user_06.jpg",
+    "course_link": "./course.html?id=6"
+  },
+  {
+    "id": "7",
+    "name": "Ngoc Duc",
+    "class": "Program Python from Zero to Hero",
+    "teacher": "Vu Quoc Tuan",
+    "cover": "./images/user_07.jpg",
+    "course_link": "./course.html?id=7"
+  },
+  {
+    "id": "8",
+    "name": "Quynh Anh",
+    "class": "The Art of Communicate and Negotiate",
+    "teacher": "Phan Van Truong",
+    "cover": "./images/user_08.jpg",
+    "course_link": "./course.html?id=8"
+  },
+  {
+    "id": "9",
+    "name": "Tran Thanh",
+    "class": "Classic business strategy in the F&B industry",
+    "teacher": "Nguyen Tan Trung",
+    "cover": "./images/user_09.jpg",
+    "course_link": "./course.html?id=9"
+  },
+  {
+    "id": "10",
+    "name": "Viet Huong",
+    "class": "Basic Yoga practice at home with Nguyen Hieu",
+    "teacher": "Nguyen Hieu",
+    "cover": "./images/user_10.jpg",
+    "course_link": "./course.html?id=10"
+  }
+]

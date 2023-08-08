@@ -1,0 +1,568 @@
+@media only screen and (max-width: 1279px) {
+  .trending-img {
+    width: 80px;
+  }
+  .nav-voucher {
+    display: none !important;
+  }
+  .sign-box {
+    padding: 20px;
+  }
+  .checkbox1,
+  .forgot-pass {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  /* .trending-img {
+    width: 80px;
+  } */
+  .logo-title-nav {
+    display: none;
+  }
+  .count-online-text {
+    display: none;
+  }
+  .count-online {
+    display: none;
+  }
+  .course-review-count {
+    display: none;
+  }
+  .course-star i {
+    font-size: 14px;
+  }
+  .course-price {
+    display: flex;
+  }
+  .course-price-old {
+    font-size: 14px;
+  }
+  .course-title {
+    -webkit-line-clamp: 3;
+  }
+  .course-wrapper {
+    min-height: 190px;
+  }
+  .course-item {
+    flex: 0 0 calc(25% - 10px);
+    margin: 10px 0 0 10px;
+  }
+  .hot-topic-body {
+    width: calc(100% + 10px);
+    margin: -10px 0 0 -10px;
+  }
+  .trending-item {
+    flex: 0 0 calc(100% - 10px);
+    margin: 10px 0 0 10px;
+  }
+  .trending-wrapper {
+    width: calc(100% + 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0 0 -10px;
+  }
+  .trending-img {
+    width: 150px;
+  }
+  .combo-row {
+    width: calc(100% + 10px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px 0px 0px -10px;
+  }
+  .combo-row-2 .combo-item {
+    flex: 0 0 calc(50% - 10px);
+    margin: 10px 0 0 10px;
+  }
+  .combo-row-3 .combo-item {
+    flex: 0 0 calc(33.33% - 10px);
+    margin: 10px 0 0 10px;
+  }
+  .combo-name {
+    -webkit-line-clamp: 2;
+    min-height: 60px;
+  }
+  .catalog-item-img {
+    padding: 10px;
+  }
+  .teacher-item {
+    flex: 0 0 calc(25% - 10px);
+    margin: 10px 0 0 10px;
+    padding: 10px;
+  }
+  .teacher-wrapper {
+    width: calc(100% + 10px);
+    margin: -10px 0 0 -10px;
+  }
+  .teacher-name {
+    font-size: 16px;
+    padding: 10px 0;
+    min-height: 80px;
+  }
+  .catalog-wrapper {
+    width: calc(100% + 10px);
+    margin: -10px 0 0 -10px;
+  }
+  .catalog-item {
+    flex: 0 0 calc(25% - 10px);
+    margin: 10px 0px 0px 10px;
+  }
+  .course-point {
+    font-size: 16px;
+  }
+  .course-title {
+    overflow: unset;
+  }
+  .course-author {
+    overflow: unset;
+  }
+  .footer-container {
+    flex-direction: column;
+  }
+  .social-links {
+    margin: 10px 0 20px;
+  }
+  .footer-container > div {
+    width: 100%;
+  }
+  /* About us */
+  .about-us-item-img {
+    height: 300px;
+  }
+  /* Combo */
+
+  /* Course desc */
+  .course-popup-container {
+    top: 0;
+    left: 0;
+  }
+
+  .course-popup-price {
+    text-align: right;
+  }
+  .course-popup-top {
+    padding: 20px 10px;
+  }
+  /* Courese Desc */
+  .course-relevant-wrapper {
+    flex-wrap: wrap;
+  }
+  .course-relevant-info {
+    width: 100%;
+  }
+  .course-relevant-price {
+    display: flex;
+  }
+  .course-relevant-price div:last-child {
+    margin-left: 20px;
+  }
+  .course-rate .course-star {
+    margin-left: 0;
+  }
+  .course-info .course-students-count,
+  .course-rate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Payment */
+  /* Profile */
+  .mobile-picture {
+    display: none;
+  }
+  .profile-frame-column {
+    width: 100%;
+  }
+  .profile-frame-mobile {
+    flex-direction: column;
+  }
+  .button-right-bottom {
+    position: unset;
+    float: right;
+  }
+  .button-right-bottom::after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+  .profile-cover-menu {
+    /* flex-wrap: wrap; */
+  }
+  /* profile */
+  /* Search */
+  .search-result-wrapper {
+    flex-direction: column;
+  }
+  .search-result-item {
+    flex-direction: column;
+  }
+  .search-result-img {
+    width: 100%;
+    height: 200px;
+  }
+  .search-result-info {
+    margin-left: 0;
+  }
+  .search-result-wrapper {
+    padding: 0;
+  }
+  .search-result-price {
+    display: flex;
+    margin-left: 0;
+  }
+  .search-result-price div:last-child {
+    margin-left: 10px;
+  }
+  /* Sign */
+  .sign-pic {
+    display: none;
+  }
+  .sign-box {
+    width: 100%;
+  }
+  /* Tag */
+  .course-frame-tag .course-item {
+    flex: 0 0 calc(25% - 10px);
+  }
+  .popular-tag-item {
+    flex: 0 0 calc(33.33% - 10px);
+  }
+  .course-frame-tag .course-author {
+  }
+  .teacher-wrapper-mobile {
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px;
+  }
+  .teacher-wrapper-mobile .teacher-name {
+    min-height: unset;
+  }
+  .teacher-box-item {
+    flex-wrap: wrap;
+  }
+  .teacher-box-item-cost {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .teacher-box-item-img {
+    width: 30%;
+  }
+  .teacher-box-item-course {
+    width: calc(70% - 20);
+  }
+  .teacher-box-item-cost div {
+    margin: 0 10px;
+  }
+  .teacher-box {
+    flex-direction: column;
+  }
+  .teacher-box-colum {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .nav-desktop {
+    display: none;
+  }
+  .navs {
+    padding: 5px;
+  }
+  .new-student {
+    display: none !important;
+  }
+  .nav-mobile {
+    display: flex;
+  }
+  .slides {
+    height: 300px;
+  }
+  main {
+    margin-top: 75px;
+  }
+  .course-item {
+    flex: 0 0 calc(50% - 10px);
+    margin: 10px 0px 0px 10px;
+  }
+  .course-wrapper {
+    min-height: 165px;
+  }
+  .trending-item {
+    flex: 0 0 calc(100% - 10px);
+    margin: 10px 0 0 10px;
+  }
+  .combo-row-3 .combo-title {
+    flex-direction: column;
+    top: 10px;
+  }
+  .combo-row-3 .combo-desc {
+    padding-left: 0;
+  }
+  .combo-row-2 .combo-title {
+    flex-direction: column;
+    top: 10px;
+  }
+  .combo-row-2 .combo-desc {
+    padding-left: 0;
+  }
+  .combo-img {
+    height: 200px;
+  }
+  .catalog-item {
+    flex: 0 0 calc(33.33% - 10px);
+    margin: 10px 0px 0px 10px;
+  }
+  .footer-container {
+    padding: 10px;
+  }
+  .parter-title {
+    line-height: 1.5;
+  }
+  .teacher-item {
+    flex: 0 0 calc(50% - 10px);
+    margin: 10px 0 0 10px;
+    padding: 10px;
+  }
+  /* About us */
+  .about-us-item {
+    flex: 0 0 calc(50% - 10px);
+    margin: 10px 0 0 10px;
+  }
+  .about-us-body-wrapper > div {
+    margin: -10px 0 0 -10px;
+    width: calc(100% + 10px);
+  }
+  .about-us-item-img {
+    height: 200px;
+  }
+  .about-us-address {
+    flex-direction: column;
+  }
+  .about-us-address-map {
+    width: 100%;
+  }
+  .about-address-desc {
+    width: 100%;
+  }
+  .about-us-address-column-45,
+  .about-us-address-column-55 {
+    width: 100%;
+  }
+  .popup-admin-box {
+    width: 90%;
+  }
+  .about-us-item-name {
+    min-height: 55px;
+  }
+  .about-us-top-title {
+    font-size: 50px;
+  }
+  .about-us-top p {
+    font-size: 22px;
+  }
+  /* Combo */
+  .combo-wrapper.flex {
+    flex-direction: column;
+  }
+  .combo-box-colum-3 {
+    flex: 0 0 calc(100% - 30px);
+    margin: 30px 0 0 30px;
+  }
+  .combo-box-wrapper.flex-justify {
+    flex-wrap: wrap;
+  }
+  .combo-box-wrapper {
+    flex-wrap: wrap;
+  }
+  .combo-box-wrapper > * {
+    width: 100%;
+  }
+  .combo-review .combo-box-wrapper div:first-child {
+    margin-right: unset;
+  }
+  .student-avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Course */
+  .course-desc {
+    max-width: 100%;
+  }
+  .course-info {
+    flex-wrap: wrap;
+    max-width: 100%;
+    text-align: center;
+  }
+  .course-teacher-avatar {
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+  }
+  .course-info .course-teacher-name {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: 22px;
+  }
+  .course-cover,
+  .course-intro,
+  .course-content-info,
+  .course-content-list,
+  .course-relevant,
+  .course-teacher,
+  .course-comment {
+    width: 100%;
+  }
+  .course-popup-remoney,
+  .course-popup-include,
+  .course-popup-more {
+    display: none;
+  }
+  .course-popup-link-item div {
+    display: none;
+  }
+  .course-popup-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .course-popup-top {
+    width: 100%;
+    padding: 10px;
+  }
+  .course-popup-price {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .course-popup-main-button {
+    display: flex;
+    gap: 20px;
+  }
+  .course-popup-main-button button {
+    margin: 0;
+  }
+  .course-info .course-students-count,
+  .course-rate {
+    width: 33.33%;
+  }
+  /* Payment */
+  .pay-item-body {
+    flex-direction: column;
+  }
+  .pay-item-column {
+    width: 100%;
+  }
+  .show-pay-item-bank {
+    height: 650px;
+  }
+  /* Profile */
+  .profile-frame-width {
+    width: 100%;
+    flex-direction: column;
+  }
+  .button-active-voucher-mobile {
+    width: max-content;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+  .profile-cover-menu-item-content {
+    display: none;
+  }
+  .profile-cover-menu-item {
+    width: 60px;
+    text-align: center;
+  }
+  .profile-cover-menu i {
+    font-size: 22px;
+  }
+  .profile-frame-flex-mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile-frame-wrapper {
+    gap: unset;
+  }
+  .image-error-item {
+    width: 30%;
+  }
+  .image-error-item {
+    height: unset;
+  }
+  .input-item-wrapper {
+    flex-direction: column;
+  }
+  .course-profile-name {
+    -webkit-line-clamp: 2;
+  }
+  /* Search */
+  .search-wrapper {
+    flex-direction: column;
+  }
+  .search-filter {
+    width: 100%;
+  }
+  .search-item {
+  }
+  .search-item-title,
+  .search-item-inner,
+  .search-filter-title {
+    padding: 10px;
+  }
+  .search-item,
+  .search-filter-title {
+    margin: 0;
+  }
+  .search-result {
+    padding: 0;
+  }
+  .search-item {
+    padding: 0;
+  }
+  /* Sign */
+  .sign-title {
+    margin-top: 45px;
+  }
+  .container-wrapper {
+    width: 75%;
+  }
+  /* Tag */
+  /* Tag */
+  .course-frame-tag .course-item {
+    flex: 0 0 calc(33.33% - 10px);
+  }
+  /* Teacher */
+  .teacher-info-count {
+    font-size: 32px;
+  }
+  .teacher-box-item-img {
+    width: 100%;
+    height: 200px;
+  }
+  .teacher-box-item-course {
+    width: 100%;
+    margin-left: 0;
+  }
+  .teacher-info {
+    width: 100%;
+    justify-content: center;
+  }
+  .teacher-wrapper-top {
+    flex-wrap: wrap;
+  }
+  .teacher-name-box {
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .teacher-name-box .teacher-name {
+    padding: 0;
+  }
+  .teacher-job {
+    text-align: center;
+  }
+}

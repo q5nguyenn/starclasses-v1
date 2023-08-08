@@ -1,0 +1,292 @@
+/* fixed */
+.chat-icon {
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  background-image: var(--gradient-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  cursor: pointer;
+  z-index: 1004;
+}
+
+.box-chat {
+  background-color: #fff;
+  width: 325px;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+  position: fixed;
+  right: 25px;
+  bottom: 100px;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1004;
+}
+
+.box-chat-title {
+  font-size: 28px;
+  margin: 15px 0;
+}
+
+.box-chat-button {
+  padding: 5px;
+  width: 100%;
+  background-image: var(--gradient-color);
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.8;
+  margin: 20px 0 0;
+}
+
+.box-chat-button:hover {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.box-chat-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box-minimize {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  /* background-color: var(--gray-color); */
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.box-minimize i {
+  color: unset;
+}
+
+.box-minimize:hover {
+  transition: 0.3s;
+  color: var(--primary-color);
+}
+
+.box-show {
+  visibility: visible;
+  animation: scale-down-right 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.box-hide {
+  visibility: hidden;
+  animation: scale-down-right-hide 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+}
+
+@keyframes scale-down-right {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    transform-origin: 100% 100%;
+  }
+}
+
+@keyframes scale-down-right-hide {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    transform-origin: 100% 100%;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: 100% 100%;
+  }
+}
+
+/* Nghịch */
+.box-chat-content {
+  height: 350px;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: var(--gray-color);
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.guest-chat {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.guest-chat span {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 4px 0 4px 4px;
+  margin-left: auto;
+  box-shadow: 0 0.125rem 0.25rem rgb(0 0 0 / 8%);
+}
+
+.box-chat-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.box-chat-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  height: 100px;
+}
+
+.admin-chat {
+  display: flex;
+}
+
+.admin-chat-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.admin-chat-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.admin-chat-content {
+  border-radius: 0 4px 4px 4px;
+  margin: 0 0 10px 5px;
+  position: relative;
+  padding: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  background-image: var(--gradient-color);
+  color: white;
+}
+
+.guest-input {
+  display: none;
+}
+
+.guest-input input {
+  width: 100%;
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 4px;
+}
+
+.guest-input button {
+  padding: 5px;
+  background-image: var(--gradient-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  width: 50px;
+  margin: 0 0 0 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.hide {
+  display: none;
+}
+
+/*
+ * Baseline styles
+ */
+.loading {
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  /* filter: blur(4px); */
+  /* background: linear-gradient(to right, #fc5c7c91, #6a82fb91); */
+  /* url(../images/singpic.jpg); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
+  backdrop-filter: blur(4px);
+  z-index: 1004;
+  display: none;
+}
+
+/*
+ * Loading Dots
+ * Can we use pseudo elements here instead :after?
+ */
+.loading-chat span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 8px;
+  height: 8px;
+  /* margin: 8px; */
+  background: rgb(75, 161, 252);
+  border-radius: 8px;
+  animation: loading 1s infinite alternate;
+}
+
+/*
+ * Dots Colors
+ * Smarter targeting vs nth-of-type?
+ */
+.loading-chat span:nth-of-type(2) {
+  background: rgba(196, 113, 237, 1);
+  animation-delay: 0.2s;
+}
+.loading-chat span:nth-of-type(3) {
+  background: rgb(236, 42, 237);
+  animation-delay: 0.6s;
+}
+
+.guest-input-item {
+  position: relative;
+}
+
+.guest-input-item input:focus ~ .focus-input {
+  animation: slide-in-bck-center 0.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.focus-input {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  z-index: -2;
+  /* animation: slide-in-bck-center 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
+}
+
+@keyframes slide-in-bck-center {
+  0% {
+    transform: translateZ(600px) scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0) scale(1);
+    opacity: 0.8;
+  }
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "name": "Dang Trong Khang",
+    "job": "Causality Investing Speaker",
+    "avatar": "./images/avatar01.jpg",
+    "link": "./teacher.html?id=12"
+  },
+  {
+    "id": "2",
+    "name": "Chau Dinh Linh",
+    "job": "World Super Memory Record holder - President of Vietnam Memory Organization",
+    "avatar": "./images/avatar02.jpg",
+    "link": "./teacher.html?id=45"
+  },
+  {
+    "id": "3",
+    "name": "Ngo Bich Hoa",
+    "job": "Founder of Skills Bridge and TVL Group",
+    "avatar": "./images/avatar03.jpg",
+    "link": "./teacher.html?id=48"
+  },
+  {
+    "id": "4",
+    "name": "Nguyen Hieu",
+    "job": "Vietnam Yoga Ambassador - CEO Zenlife Yoga",
+    "avatar": "./images/avatar04.jpg",
+    "link": "./teacher.html?id=10"
+  },
+  {
+    "id": "5",
+    "name": "Nguyen Thanh Long",
+    "job": "Lawyer - Orator",
+    "avatar": "./images/avatar05.jpg",
+    "link": "./teacher.html?id=11"
+  },
+  {
+    "id": "6",
+    "name": "Phan Van Truong",
+    "job": "PhD - Professional speaker - Expert in Finance, Leadership, Human Resources...",
+    "avatar": "./images/avatar06.jpg",
+    "link": "./teacher.html?id=8"
+  }
+]

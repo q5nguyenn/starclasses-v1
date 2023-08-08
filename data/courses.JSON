@@ -1,0 +1,63 @@
+[
+  {
+    "id": "1",
+    "topic": "Foreign Language",
+    "icon": "<i class='bi bi-translate'></i>"
+  },
+  { "id": "2", "topic": "Marketing", "icon": "<i class='bi bi-shop'></i>" },
+  {
+    "id": "3",
+    "topic": "Office Informatics",
+    "icon": "<i class='bi bi-pc-display'></i>"
+  },
+  {
+    "id": "4",
+    "topic": "Design",
+    "icon": "<i class='bi bi-brush-fill'></i>"
+  },
+  {
+    "id": "5",
+    "topic": "Business and Startup",
+    "icon": "<i class='bi bi-graph-up-arrow'></i>"
+  },
+  {
+    "id": "6",
+    "topic": "Soft skills",
+    "icon": "<i class='bi bi-lightbulb'></i>"
+  },
+  {
+    "id": "7",
+    "topic": "Sales",
+    "icon": "<i class='bi bi-cart-check-fill'></i>"
+  },
+  {
+    "id": "8",
+    "topic": "Information technology",
+    "icon": "<i class='bi bi-code-slash'></i>"
+  },
+  {
+    "id": "9",
+    "topic": "Health and Gender",
+    "icon": "<i class='bi bi-house-heart-fill'></i>"
+  },
+  {
+    "id": "10",
+    "topic": "Lifestyle",
+    "icon": "<i class='bi bi-cup-hot-fill'></i>"
+  },
+  {
+    "id": "11",
+    "topic": "Raise up child",
+    "icon": "<i class='bi bi-person-check-fill'></i>"
+  },
+  {
+    "id": "12",
+    "topic": "Marriage and Family",
+    "icon": "<i class='bi bi-people-fill'></i>"
+  },
+  {
+    "id": "13",
+    "topic": "Photography and Editing",
+    "icon": "<i class='bi bi-camera-fill'></i>"
+  }
+]

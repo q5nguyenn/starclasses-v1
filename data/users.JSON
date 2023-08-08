@@ -1,0 +1,50 @@
+[
+  {
+    "id": "0",
+    "name": "Nguyễn Văn Quý",
+    "email": "q5nguyenn@gmail.com",
+    "phone": "0986295956",
+    "password": "123456",
+    "avatar": "./images/user.png"
+  },
+  {
+    "id": "1",
+    "name": "Nguyễn Văn Quý",
+    "email": "q5nguyenn@gmail.com",
+    "phone": "0986295956",
+    "password": "123456",
+    "avatar": "./images/user.png"
+  },
+  {
+    "id": "2",
+    "name": "Nguyễn Văn Quý",
+    "email": "q5nguyenn@gmail.com",
+    "phone": "0986295956",
+    "password": "123456",
+    "avatar": "./images/user.png"
+  },
+  {
+    "id": "3",
+    "name": "Nguyễn Văn Quý",
+    "email": "q5nguyenn@gmail.com",
+    "phone": "0986295956",
+    "password": "123456",
+    "avatar": "./images/user.png"
+  },
+  {
+    "id": "4",
+    "name": "Nguyễn Văn Quý",
+    "email": "q5nguyenn@gmail.com",
+    "phone": "0986295956",
+    "password": "123456",
+    "avatar": "./images/user.png"
+  },
+  {
+    "id": "5",
+    "name": "Nguyễn Văn Quý",
+    "email": "q5nguyenn@gmail.com",
+    "phone": "0986295956",
+    "password": "123456",
+    "avatar": "./images/user.png"
+  }
+]
